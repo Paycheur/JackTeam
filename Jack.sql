@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Mar 31 Juillet 2012 à 17:33
--- Version du serveur: 5.1.44
--- Version de PHP: 5.3.1
+-- Généré le: Lun 01 Octobre 2012 à 21:02
+-- Version du serveur: 5.5.25-log
+-- Version de PHP: 5.3.15
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,49 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Base de données: `Jack`
 --
-
--- --------------------------------------------------------
-
---
--- Structure de la table `commentaire_statut`
---
-
-CREATE TABLE IF NOT EXISTS `commentaire_statut` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `id_statut` int(11) NOT NULL,
-  `auteur` varchar(20) NOT NULL,
-  `commentaire` text NOT NULL,
-  `date` bigint(20) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=28 ;
-
---
--- Contenu de la table `commentaire_statut`
---
-
-INSERT INTO `commentaire_statut` (`id`, `id_statut`, `auteur`, `commentaire`, `date`) VALUES
-(1, 5, 'admin', 'et ouai ta vu !!', 1308141678),
-(2, 5, 'admin', 'oh yeah', 1308142443),
-(10, 1, 'admin', 'pti con va', 1308143489),
-(9, 1, 'admin', 'ahahah lolant !!!', 1308143476),
-(8, 1, 'admin', 'qwerty', 1308143466),
-(11, 6, 'admin', 'nani ?', 1308214372),
-(12, 6, 'admin', 'why ? ', 1308214378),
-(13, 6, 'admin', 'poupipoupippouuuuuu', 1308214393),
-(14, 6, 'admin', 'are you mad ? !!\r\n', 1308214405),
-(15, 6, 'admin', 'ohhuuuu', 1308214868),
-(16, 6, 'admin', 'prout', 1308214876),
-(17, 6, 'admin', 'yahou\r\n', 1316710290),
-(18, 6, 'admin', 'nani', 1316710299),
-(19, 6, 'admin', 'oO', 1316710306),
-(20, 5, 'admin', 'euh tg pour voir oOoOoOo hihi', 1316710341),
-(21, 5, 'admin', 'adadadad', 1316712926),
-(22, 5, 'admin', 'adadadad', 1316712944),
-(23, 5, 'admin', 'dddd', 1316712949),
-(24, 7, 'admin', 'ok', 1316717158),
-(25, 8, 'admin', 'kqsdqsd', 1316721691),
-(26, 8, 'admin', 'qsdqsd', 1316721694),
-(27, 9, 'admin', 'qsdqsdqsd', 1316878912);
 
 -- --------------------------------------------------------
 
@@ -365,7 +322,7 @@ CREATE TABLE IF NOT EXISTS `evenements_vacances_d` (
   `dateDebut` varchar(10) NOT NULL,
   `dateFin` varchar(10) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Contenu de la table `evenements_vacances_d`
@@ -375,7 +332,9 @@ INSERT INTO `evenements_vacances_d` (`id`, `idEvent`, `idAuteur`, `dateDebut`, `
 (1, 15, 4, '16-04-2012', '20-04-2012'),
 (2, 15, 4, '14-04-2012', '21-04-2012'),
 (3, 7, 4, '13-04-2012', '27-04-2012'),
-(4, 16, 4, '21-04-2012', '29-04-2012');
+(4, 16, 4, '21-04-2012', '29-04-2012'),
+(5, 6, 4, '05-10-2012', '19-10-2012'),
+(6, 6, 4, '04-10-2012', '12-10-2012');
 
 -- --------------------------------------------------------
 
@@ -546,7 +505,7 @@ CREATE TABLE IF NOT EXISTS `galerie_photos_com` (
   `commentaire` text NOT NULL,
   `date` bigint(20) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=34 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=51 ;
 
 --
 -- Contenu de la table `galerie_photos_com`
@@ -570,7 +529,24 @@ INSERT INTO `galerie_photos_com` (`id`, `id_photo`, `id_membre`, `commentaire`, 
 (15, 0, 50, 'hihi', 1318529057),
 (24, 25, 50, 'Un premier commentaire !', 1331241961),
 (20, 5, 50, 'haha !', 1318529891),
-(23, 19, 50, 'test', 1319122984);
+(23, 19, 50, 'test', 1319122984),
+(34, 47, 0, 'test', 1343944752),
+(35, 47, 0, 'haha', 1343945135),
+(36, 48, 0, 'lol', 1343945265),
+(37, 47, 0, 'loool', 1343946780),
+(38, 48, 0, 'mdr', 1343946821),
+(39, 48, 0, 'xD', 1343946960),
+(40, 48, 0, 'ptdr', 1343947009),
+(41, 48, 0, 'lool', 1343947095),
+(42, 47, 0, 'et ouai ca marche !', 1343947128),
+(43, 47, 0, 'roh :)', 1343988044),
+(44, 48, 0, 'dadazd', 1343988177),
+(45, 49, 0, 'mdr', 1343988191),
+(46, 50, 0, 'gzeferzg', 1343988238),
+(47, 51, 0, 'dazd', 1343988305),
+(48, 52, 0, 'ffee', 1343988331),
+(49, 52, 0, 'zadz', 1343988430),
+(50, 48, 0, 'lol', 1344536461);
 
 -- --------------------------------------------------------
 
@@ -584,7 +560,7 @@ CREATE TABLE IF NOT EXISTS `galerie_photos_notes` (
   `id_photo` int(11) NOT NULL,
   `note` tinyint(4) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=20 ;
 
 --
 -- Contenu de la table `galerie_photos_notes`
@@ -608,34 +584,8 @@ INSERT INTO `galerie_photos_notes` (`id`, `id_membre`, `id_photo`, `note`) VALUE
 (15, 50, 25, 1),
 (16, 51, 25, 0),
 (17, 50, 31, 1),
-(18, 4, 48, 1);
-
--- --------------------------------------------------------
-
---
--- Structure de la table `membre`
---
-
-CREATE TABLE IF NOT EXISTS `membre` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `pseudo` text NOT NULL,
-  `mdp_md5` text NOT NULL,
-  `email` text NOT NULL,
-  `groupe` text NOT NULL,
-  `date_inscription` int(11) NOT NULL,
-  `question` text NOT NULL,
-  `reponse` text NOT NULL,
-  `etat` int(1) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=52 ;
-
---
--- Contenu de la table `membre`
---
-
-INSERT INTO `membre` (`id`, `pseudo`, `mdp_md5`, `email`, `groupe`, `date_inscription`, `question`, `reponse`, `etat`) VALUES
-(50, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@admin.com', 'administrateur', 1288450667, 'animal', 'tchoupie', 1),
-(51, 'membre', '5a99c8cac333affeed05a24fe0d6f61c', 'membre@membre.fr', 'membre', 1290862312, 'animal', 'tamere', 1);
+(18, 4, 48, 1),
+(19, 4, 51, 1);
 
 -- --------------------------------------------------------
 
@@ -653,7 +603,7 @@ CREATE TABLE IF NOT EXISTS `membres` (
   `photo` varchar(255) NOT NULL,
   `groupe` varchar(20) NOT NULL,
   `etat` tinyint(1) NOT NULL,
-  `dateNaiss` bigint(20) NOT NULL,
+  `dateNaiss` varchar(10) NOT NULL,
   `dateInsc` bigint(20) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
@@ -663,10 +613,32 @@ CREATE TABLE IF NOT EXISTS `membres` (
 --
 
 INSERT INTO `membres` (`id`, `pseudo`, `password`, `nom`, `prenom`, `email`, `photo`, `groupe`, `etat`, `dateNaiss`, `dateInsc`) VALUES
-(1, 'Paycheur', '86cf69ddd3e368dc4579a90a6800af53', '', 'Yoann', 'yo.lefevre@gmail.com', '', 'membre', 0, 0, 0),
-(2, 'membre', '5a99c8cac333affeed05a24fe0d6f61c', '', 'haha', 'test@gdzadzh.com', '', 'membre', 0, 0, 1333303682),
-(3, '', 'd41d8cd98f00b204e9800998ecf8427e', '', '', '', '', 'membre', 0, 0, 1333363747),
-(4, 'admin', '9c1ad00a16a7c67e2727b471ac969e96', 'admin', 'admin', 'admin@dzadzadz.fr', '', 'administrateur', 1, 0, 1333545650);
+(1, 'paycheur', 'd41d8cd98f00b204e9800998ecf8427e', 'Lefevre', 'Yoann', '', 'upload/Profil/test.jpg', 'membre', 0, '1-1-1940', 0),
+(2, 'paycheur', 'd41d8cd98f00b204e9800998ecf8427e', 'Lefevre', 'Yoann', '', 'upload/Profil/test.jpg', 'membre', 1, '1-1-1940', 1333303682),
+(3, 'paycheur', 'd41d8cd98f00b204e9800998ecf8427e', 'Lefevre', 'Yoann', '', 'upload/Profil/test.jpg', 'membre', 0, '1-1-1940', 1333363747),
+(4, 'paycheur', 'bf6982fbf3fc390e68ec90ceb101033f', 'Lefevre', 'Yoann', 'yo.lefevre@gmail.com', '../Upload/Profil/28185-1920x1080.jpg', 'administrateur', 1, '1-1-1940', 1333545650);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `membres_photo_profil`
+--
+
+CREATE TABLE IF NOT EXISTS `membres_photo_profil` (
+  `idMembre` int(11) NOT NULL,
+  `photo` varchar(255) NOT NULL,
+  `date` datetime NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `membres_photo_profil`
+--
+
+INSERT INTO `membres_photo_profil` (`idMembre`, `photo`, `date`) VALUES
+(4, '../Upload/Profil/test.jpg', '0000-00-00 00:00:00'),
+(4, '../Upload/Profil/test.jpg', '0000-00-00 00:00:00'),
+(4, '../Upload/Profil/27961_1600x1080.jpg', '0000-00-00 00:00:00'),
+(4, '../Upload/Profil/28185-1920x1080.jpg', '2012-10-01 18:50:17');
 
 -- --------------------------------------------------------
 
@@ -699,23 +671,68 @@ INSERT INTO `message` (`id`, `objet`, `contenu`, `expediteur`, `destinataire`) V
 
 CREATE TABLE IF NOT EXISTS `statut` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `auteur` varchar(20) NOT NULL,
+  `auteur` int(5) NOT NULL,
   `contenu` text NOT NULL,
   `date` bigint(20) NOT NULL,
+  `photo` varchar(255) DEFAULT NULL,
+  `tag` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=28 ;
 
 --
 -- Contenu de la table `statut`
 --
 
-INSERT INTO `statut` (`id`, `auteur`, `contenu`, `date`) VALUES
-(1, 'admin', 'azertyui', 1308139635),
-(7, 'admin', 'Test de fou', 1316717151),
-(6, 'admin', 'OMAGAD', 1308214365),
-(5, 'admin', 'super soirée les jack !!!', 1308140090),
-(8, 'admin', 'fhskjdfsdfsdfsfsd', 1316721686),
-(9, 'admin', 'igkjshkjdhqkjshdkqjshdqsd', 1316878909);
+INSERT INTO `statut` (`id`, `auteur`, `contenu`, `date`, `photo`, `tag`) VALUES
+(1, 0, 'azertyui', 1308139635, NULL, NULL),
+(7, 0, 'Test de fou', 1316717151, NULL, NULL),
+(6, 0, 'OMAGAD', 1308214365, NULL, NULL),
+(5, 0, 'super soirée les jack !!!', 1308140090, NULL, NULL),
+(8, 0, 'fhskjdfsdfsdfsfsd', 1316721686, NULL, NULL),
+(9, 0, 'igkjshkjdhqkjshdkqjshdqsd', 1316878909, NULL, NULL),
+(10, 0, '', 1344510167, '', ''),
+(11, 4, 'dadd', 1344510479, '', ''),
+(12, 4, 'fzfazf', 1344510553, '', ''),
+(13, 4, 'fzafzef', 1344510617, '', ''),
+(14, 4, 'fazfazf', 1344511178, '', ''),
+(15, 4, 'test', 1344523864, '', ''),
+(16, 4, 'mdrrr', 1344523903, '', ''),
+(17, 4, 'hahaha', 1344523975, '', ''),
+(18, 4, 'hahaha', 1344523976, '', ''),
+(19, 50, 'hahaha', 1344523977, '', ''),
+(20, 50, 'hahaha', 1344523994, '', ''),
+(21, 50, 'fzeafezaf', 1344524199, '', ''),
+(22, 50, 'faezfzef', 1344524227, '', ''),
+(23, 50, 'efzeafezf', 1344524977, '', ''),
+(24, 50, 'efzeafezf', 1344524979, '', ''),
+(25, 50, 'dadad', 1344525084, '', ''),
+(26, 50, 'fzeafez', 1344525121, '', ''),
+(27, 50, 'fazfezfez', 1344525149, '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `statut_commentaires`
+--
+
+CREATE TABLE IF NOT EXISTS `statut_commentaires` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `idStatut` int(11) NOT NULL,
+  `auteur` int(11) NOT NULL,
+  `contenu` text NOT NULL,
+  `date` bigint(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+
+--
+-- Contenu de la table `statut_commentaires`
+--
+
+INSERT INTO `statut_commentaires` (`id`, `idStatut`, `auteur`, `contenu`, `date`) VALUES
+(3, 1, 50, 'dazdzd', 1349022107),
+(4, 1, 4, 'gazfezfae', 1349022152),
+(5, 1, 4, 'qdgyklityjd', 1349022442),
+(6, 1, 4, 'qdghshqsgdsgs', 1349022448);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
