@@ -1,0 +1,26 @@
+.bloc_statut
+{
+	clear:both;
+	min-height:70px;
+    padding:5px;
+    margin-bottom:10px;
+}
+
+.bloc_statut img
+{
+	float:left;
+}
+
+.bloc_statut .message
+{
+	min-height:65px;
+	padding:3px;
+	margin-left:75px;
+	border-radius: 5px 5px 5px 5px;
+	background-color:#e7f0f5;
+}
+
+.bloc_statut .message .auteur_date
+{
+	float:right;
+}

@@ -1,0 +1,78 @@
+/************** PARTIE EVENEMENTS ********************/
+
+p.info_cadeau {
+   position: relative;
+   text-decoration: none;
+   font-weight:bold;
+   font-size:15px;
+}
+
+p.view /*quand on affiche la description des cadeaux */
+{
+	color: #536483;
+   font-size:16px;
+}
+
+
+.titre_event /*titre des √©v√©nement */
+{
+	font-size:24px;
+	text-align:center;
+	font-weight:bold;
+	font-family:Trebuchet MS;
+	color:#636363;
+	font-variant:small-caps;
+	border:1px dotted #818181;
+	background-color:#d8e9fa;
+	margin-bottom:10px;
+}
+
+.liste_cadeaux_val /* la phrase "Liste des cadeaux valid√©s" */
+{
+	background:url("img/cadeau.jpg") no-repeat top left;
+	color:#478c32;
+	font-variant:small-caps;
+	font-size:18px;
+	padding-left:80px;
+	padding-top:20px;
+	height:52px;
+	font-weight:bold;
+}
+	
+
+ul.details_cadeau li /*le détails des cadeaux non validés*/
+{
+	font-size:11px;
+}
+
+ul.details_cadeau_val li /*le détail des cadeaux validés */
+{
+	font-size:11px;
+}
+
+ul.details_cadeau_val
+{
+	margin-bottom:10px;
+	
+}
+
+.type_bloc_content /* La description de l'événement */
+{
+	border: 1px dotted #636363;
+	width:450px;
+	padding:10px;
+}
+
+.type_bloc_droit /* le bloc où sont les cadeaux non validés */
+{
+	border: 1px dotted #636363;
+	width: 250px;
+	padding:10px;
+	float:right;
+}
+
+.phrase_participation /*La phrase qui permet de dire si l'utilisateur actuel participe ou non a l'évenement */
+{
+	text-align:center;
+	background-color:#ebebeb;
+}

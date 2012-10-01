@@ -1,0 +1,532 @@
+body
+{
+	background-color: #ffffff;
+	margin:0px;
+	background:url("img/content_bg.jpg") repeat-x 0px 216px;
+}
+
+p, ul, li
+{
+	margin:0px;
+	color: #4b4b4b;
+	font-size:14px;
+}
+
+a
+{
+	text-decoration:none;
+	color:#3897e8;
+}
+
+a:hover
+{
+	text-decoration:none;
+	color:#e8a038;
+}	
+
+button
+{
+	border:1px dotted #636363;
+	background-color:#e6f3ea;
+	color: #3897e8;
+	font-size:9px;
+}
+
+button:hover
+{
+	color:#e8a038;
+	background-color:#ffffff;
+	font-size:9px;
+}
+
+#header
+{
+	height:182px;
+	background:url("img/bann_bg.jpg") repeat-x top;
+}
+	
+.bann_g /* Bannière principale */
+{
+	height:182px;
+	width:1016px;
+	margin:auto;
+	background:url("img/bann_g.jpg") no-repeat top left;
+}
+
+#content /* Tout le contenu de la page en dessous de le header et au dessus du footer */
+{
+width:1000px;
+margin:auto;
+min-height:300px;
+background:url("img/content_bg2.jpg") repeat-x;
+}
+
+.bann_c /* Cadre où il y a le nom du membre */
+{
+	background:url("img/bann_c.jpg") no-repeat top;
+	height:182px;
+	width:125px;
+	margin-left:768px; //longueur bannière background de #header
+}
+
+
+.bann_d /* Fin de la bannière */
+{
+	background:url("img/bann_d.jpg") no-repeat top;
+	height:182px;
+	width:123px;
+	float:right;
+}
+
+.nav /* Le menu */
+{
+text-align:center;
+margin-bottom:21px;
+margin-top:0px;
+background:url("img/menu_bg.jpg") repeat-x;
+border-top: 1px solid #5e5e5e;
+border-bottom: 1px solid #5e5e5e;
+height:32px;
+padding-top:0px;
+}
+
+.nav ul
+{
+	margin:0px;
+	padding-top:6px;
+}
+
+.nav a
+{
+	color:#707070;
+	font-size:12px;
+	font-family:Trebuchet MS;
+	text-decoration:none;
+	
+}
+
+.nav a:hover
+{
+	color:#61b2f7;
+}
+
+.nav li
+{
+	padding-top:6px;
+	padding-bottom:8px;
+display: inline;
+padding-right:15px;
+padding-left:20px;
+height:32px;
+background:url("img/menu_separ.gif") no-repeat;
+}
+
+/*.nav li:hover
+{
+	background:url("img/menu_bg_hover.jpg") repeat-x;
+}*/
+
+.nav_dernier
+{
+	background:url("img/menu_separ.gif") no-repeat right;
+	padding-top:6px;
+	padding-bottom:8px;
+	padding-right:20px;
+}
+
+#bloc_gauche /* Bloc flotant à gauche */
+{
+	float:left;
+width:238px;
+height:100%;
+background-color:#ffffff;
+
+}
+
+#bloc_droit /* Bloc principal */
+{
+width:760px;
+height:100%;
+background-color:#ffffff;
+margin-left:255px;
+
+}
+
+
+#bloc_g_events /* Si problème avec IE il faudra surement enlever le padding et le mettre dans bloc_g_events p */
+{
+	width:197px;
+	margin-top:0px;
+	border-bottom: 1px solid #61b2f7;
+	border-right: 1px solid #61b2f7;
+	border-left: 4px solid #61b2f7;
+	background-color:#ffffff;
+	-moz-border-radius: 0px 0px 10px 10px;  
+	-webkit-border-radius: 0px 0px 10px 10px;     
+	-khtml-border-radius: 0px 0px 10px 10px;   
+	border-radius:0px 0px 10px 10px; 
+	margin-left:26px;
+	padding:5px;
+	margin-bottom:30px;
+}
+
+#bloc_g_events p
+{
+	width:185px;
+}
+
+#bloc_g_events_titre
+{
+	margin:0px;
+	background:url("img/bloc_events.jpg") no-repeat top;
+	width:238px;
+	height:88px;
+}
+
+#bloc_g_photos /* Si problème avec IE il faudra surement enlever le padding et le mettre dans bloc_g_events p */
+{
+	width:197px;
+	margin-top:0px;
+	border-bottom: 1px solid #81df68;
+	border-right: 1px solid #81df68;
+	border-left: 4px solid #81df68;
+	background-color:#ffffff;
+	-moz-border-radius: 0px 0px 10px 10px;  
+	-webkit-border-radius: 0px 0px 10px 10px;     
+	-khtml-border-radius: 0px 0px 10px 10px; 
+	border-radius:0px 0px 10px 10px;  
+	margin-left:26px;
+	padding:5px;
+	margin-bottom:30px;
+}
+
+#bloc_g_photos p
+{
+	width:185px;
+}
+
+#bloc_g_photos_titre
+{
+	margin:0px;
+	background:url("img/bloc_photos.jpg") no-repeat top;
+	width:238px;
+	height:87px;
+}
+
+.album td /* Les cellules du tableau des albums */
+{
+	width:350px;
+	height:110px;
+	border: 1px dotted #636363;
+	padding:5px;
+}
+
+.album td:hover
+{
+	background-color:#dceefd;
+}
+
+.album img /* La photo de l'album */
+{
+	float:left;
+	margin-right:5px;
+	border:2px solid #ebebeb;	
+}
+
+.album h4 /* Le titre de l'album */
+{
+	color:#dd9e31;
+	font-size:14px;
+	text-decoration:bold;
+	text-transform:uppercase;
+	margin:0px;
+	margin-left:110px;
+	display:block;
+}
+	
+
+.album p /* La description de l'album */
+{
+	background-color:#dceffd;
+	margin-left:110px;
+	padding:3px;
+	margin-top:5px;
+	margin-bottom:5px;
+	color:#4b4b4b;
+}
+
+.album div /* La partie où va etre afficher le message de suppréssion */
+{
+	margin-left:110px;
+	margin-top:5px;
+	margin-bottom:5px;
+	color:#4b4b4b;
+	font-size:10px;
+}
+
+.album span /* Créé par XX le ... */
+{
+	color:#4b4b4b;
+	font-size:10px;
+	float:right;
+	margin-right:20px;
+}
+
+.options img /* Options supprimer et modifier */
+{
+	float:right;
+	border:0px;
+	margin:0px;
+}
+
+.photos td /* Les cellules du tableau des albums */
+{
+	width:100px;
+	height:100px;
+	padding:4px;
+	border: 1px dotted #636363;
+	text-align:center;
+}
+
+.photos td:hover /* Les cellules du tableau des albums */
+{
+	width:100px;
+	height:100px;
+	padding:4px;
+	border: 1px dotted #636363;
+	text-align:center;
+	background-color:#dceffd;
+}
+
+
+
+.type_bloc1 
+{
+-moz-border-radius: 5px 5px 5px 5px;  
+-webkit-border-radius: 5px 5px 5px 5px;   
+-khtml-border-radius: 5px 5px 5px 5px;   
+border-radius:5px 5px 5px 5px;  
+background-color:#f4f6f8;
+border: 1px solid #61b2f7;
+
+padding: 10px;
+/*float:right;*/
+/*margin-right:15px;*/
+}
+
+
+
+.type_bloc1_right
+{
+-moz-border-radius: 5px 5px 5px 5px;  
+-webkit-border-radius: 5px 5px 5px 5px;   
+-khtml-border-radius: 5px 5px 5px 5px;   
+border-radius:5px 5px 5px 5px;  
+background-color:#f4f6f8;
+border: 1px solid #61b2f7;
+width: 300px;
+padding: 10px;
+float:right;
+margin-right:15px;
+}
+
+
+.type_bloc1 legend
+{
+	margin-left:20px;
+	color:#636363;
+	font-size:18px;
+	font-variant:small-caps;
+	font-weight:bold;
+}
+
+
+	
+.c_vert { color: #5ab540;}
+.c_bleu { color: #62b2f7;}
+.c_rouge { color: #c13030;}
+.c_jaune { color: #aaa229;}
+.c_violet { color: #8122b8;}
+
+h2
+{
+	background:url("img/h2_bg.gif") no-repeat;
+	color:#636363;
+	font-size:22px;
+	font-variant:small-caps;
+	font-weight:bold;
+	padding-left:15px;
+	height:29px;
+	padding-top:4px;
+	margin-left:50px;
+}
+
+h1
+{
+	margin-top:0px;
+	margin-bottom:40px;
+	text-align:center;
+	color:#636363;
+	font-variant:small-caps;
+}
+
+h3
+{
+	margin:0px;
+	padding-left:10px;
+	color:#636363;
+	font-variant:small-caps;
+	font-size:18px;
+	border-bottom:1px dotted #61b2f7;
+	border-left:3px solid #61b2f7;
+}
+
+.affichage_photo
+{
+	margin-left:25px;
+	border: 1px dotted #636363;
+	padding:5px;
+}
+
+.rapide_nav
+{
+	background:url("img/content_bg2.jpg") repeat-x top;
+	height:63px;
+	font-size:11px;
+	color:#636363;
+}
+
+.rapide_nav a
+{
+	font-size:11px;
+	color:#439ce8;
+	text-decoration:none;
+}
+
+.note_photo /*la partie où les notes des photos sont marqués*/
+{
+	border: 1px dotted #636363;
+	width: 250px;
+	padding:10px;
+	float:right;
+	/*margin-right:23px;*/
+}
+
+.note_photo p /*le texte pour les notes*/
+{
+	font-size:12px;
+	color: #4b4b4b;
+	margin:0px;
+}
+
+.description_photo /*la partie où il y a la description, le titre, la date de publication, ect de chaque photos*/
+{
+	border: 1px dotted #636363;
+	width:400px;
+	margin-left:25px;
+	padding:10px;
+}
+
+.description_photo div /* la partie Supprimer/modifier et messages de suppréssion*/
+{
+float:right;
+font-size:10px;
+margin:0px;
+text-align:right;
+}
+
+.commentaires_photos /*bloc des commentaires sur les photos */
+{
+	width:420px;
+	margin-left:25px;
+}
+
+.commentaire /* LE commentaire */
+{
+	background-color:#dceffd;
+	padding:5px;
+	margin-top:30px;
+	border-left: 2px solid #aaa9a9;
+}
+
+.dernier_commentaire 
+{
+	padding:5px;
+	margin-top:10px;
+	border-right: 1px dotted #636363;
+	border-left: 1px dotted #636363;
+	background-color:#e9f0eb;
+}
+
+.dernier_commentaire span
+{
+	font-size:10px;
+	display:block;
+	text-align:right;
+	background-color:#ffffff;
+	padding:3px;
+	border-bottom: 1px dotted #b7b7b7;
+}
+
+
+.infos_commentaire /* les infos sur le commentaire */
+{
+	font-size:10px;
+	text-align:right;
+	background-color:#ffffff;
+	margin:0px;
+}
+
+.confirmation
+{
+	background-color:#c3f3b6;
+	text-align:center;
+	font-weight:bold;
+	color:#319914;
+	padding:5px;
+	border: 1px solid #81df67;
+}
+
+.error
+{
+	background-color:#f3aba4;
+	text-align:center;
+	font-weight:bold;
+	color:#a22215;
+	padding:5px;
+	border: 1px solid #e1605d;
+}
+
+
+a.info {
+   position: relative;
+   color: black;
+   text-decoration: none;
+}
+a.info span {
+   display: none; /* On masque l'infobulle. */
+}
+a.info:hover {
+   background: none; /* Correction d'un bug d'Internet Explorer. */
+   z-index: 500; /* On définit une valeur pour l'ordre d'affichage. */
+}
+a.info:hover span {
+   display: inline; /* On affiche l'infobulle. */
+   position: absolute;
+
+   white-space: nowrap; /* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
+
+   top: 0px; /* On positionne notre infobulle. */
+   left: 400px;
+
+   background-color: #e9f0eb;
+
+   color: green;
+   padding: 3px;
+
+  	border: 1px dotted #636363;
+}
+
+
+
+

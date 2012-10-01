@@ -1,0 +1,197 @@
+/*
+ -Contour gris clair : #d0d5d9
+ -Background gris clair : #f0f1f4
+ -Background vert : #eef6dc
+ -Background bleu : #dceffd
+ -Color "titre" : #3f5469
+*/
+ 
+
+/*LISTE EVENEMENT*/
+
+.blocListEvent
+{
+    border:1px solid #d0d5d9;
+    margin-bottom:10px;
+    padding:2px;
+    box-shadow: 0px 0px 5px #d0d0d0;
+}
+
+.listEventTitre
+{
+    background-color:#dceffd;
+    color:#3f5469;
+    text-align:center;
+    font-size:16px;
+    font-variant:small-caps;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+.listEventPresentation
+{
+    margin:10px 5px 10px 5px;
+    border:1px dotted #b1d7e5;
+    padding:2px;
+}
+
+.eventPresentation /*La présentation de l'évenement */
+{
+    border:1px solid #ffffff;
+    background-color:#ffffff;
+    padding:10px;
+}
+
+.listeSondage
+{
+    margin:0px;
+    width:100%;
+    border-collapse:collapse;
+    border-top:1px solid #d0d5d9;
+}
+
+.listeSondage th
+{
+    background-color:#eef6dc;
+    border-bottom:1px solid #d0d5d9;
+    border-right:1px solid #d0d5d9;
+    border-left:1px solid #d0d5d9;
+    height:20px;
+    text-align:center;
+    font-weight:bold;
+    font-size:14px;
+    color:#3f5469;
+    text-transform: uppercase;
+}
+
+.listeSondage td
+{
+    border-left:1px dotted #d0d5d9;
+    border-right:1px dotted #d0d5d9;
+    border-top:1px dotted #d0d5d9;
+    text-align:center;
+}
+
+
+
+.listeSondage p
+{
+    font-size:9px;
+}
+.listeParticipation
+{
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.listeParticipation td, .listeParticipation tr, .listeParticipation th
+{
+    border:1px solid #d0d5d9;
+}
+
+.listeParticipation th
+{
+    color:#3f5469;
+    font-size:13px;
+    padding:0px 15px 0px 15px;
+    background-color:#f0f1f4;
+}
+.listeParticipation td
+{
+    color:#4b4b4b;
+    font-size:11px;
+    padding:5px;
+    background-color:#ffffff;
+}
+
+.listeParticipation table
+{
+    border-collapse: collapse;
+    margin:auto;
+    width:300px;
+}
+
+.blocResume
+{
+    padding:2px;
+    background-color:#ffffff;
+    clear:both;
+    margin:0px;
+}
+
+.blocResume textarea
+{
+    width:296px;
+    height:50px;
+    margin-top:10px;
+}
+
+.modifBlocResume
+{
+    float:right;
+}
+
+
+
+
+.commentaire /* LE commentaire */
+{
+	background-color:#dceffd;
+	padding:5px;
+	margin-top:30px;
+	border-left: 2px solid #aaa9a9;
+}
+
+.infos_commentaire /* les infos sur le commentaire */
+{
+	font-size:10px;
+	text-align:right;
+	background-color:#ffffff;
+	margin:0px;
+}
+
+.commentairesEvent
+{
+    margin:auto;
+    width:500px;
+    clear:both;
+    padding-top:20px;
+}
+
+#msgParticipation
+{
+    font-weight:bold;
+    font-size:15px;
+}
+
+#asideShowEvent
+{
+    float:right;
+    width:300px;
+}
+
+#articleShowEvent
+{
+    width:520px;
+}
+
+
+
+#blocAddPropositions
+{
+    display:none;
+    clear:both;
+}
+#blocAddPropositions fieldset
+{
+    display:inline;
+    margin:0px;
+    margin-top:20px;
+    
+}
+
+.showFormsPropositions /*Lien Ajouter une proposition/Cacher les formulaires*/
+{
+    float:right;
+    cursor:pointer;
+}

@@ -1,0 +1,101 @@
+
+#calendrierEntier, #calendrierEntier table, #calendrierEntier select {
+font-family: Arial;
+font-size: 12px;
+}
+
+#calendrierEntier {
+background-image: url("../imgs/calendrier.gif");
+background-position: center center;
+background-repeat: no-repeat;
+}
+
+#calendrierEntier input {
+border: 1px solid #CCCCCC;
+font-size: 80%;
+}
+
+#calendar {
+width: 100%;
+border-collapse: collapse;
+border-right: 1px solid #999999;
+border-bottom: 1px solid #999999;
+margin: 0;
+padding: 0;
+text-align: center;
+font-size: 110%;
+}
+
+#calendar th {
+border-left: 1px solid #999999;
+border-top: 1px solid #999999;
+padding: 0.5em;
+font-weight: bold;
+width: 14%;
+}
+
+#calendar td {
+border-left: 1px solid #999999;
+border-top: 1px solid #999999;
+margin: 0;
+padding: 0;
+}
+
+#calendar td a {
+display: block;
+text-decoration: none;
+color: #FF0000;
+}
+
+#calendar td a:hover {
+background-color: #E99042;
+color: #660000;
+}
+
+#calendar .dim{
+background-color: #D8CDE8;
+}
+
+#calendar .aut {
+background-color: #EEEEEE;
+}
+
+#calendar .sam {
+background-color: #DDD69F;
+}
+
+#calendar td.ajd {
+background-color: #EEEE44;
+}
+
+#calendar td.cho {
+background-color: #DDEEDD;
+}
+
+#calendrier {
+width: 100%;
+margin: 0;
+text-align: center;
+}
+
+#calendrier select {
+width: 30%;
+margin: 0;
+padding: 0;
+}
+
+#calendrier option {
+border: 0;
+}
+
+#calendrier .navcal {
+width: 20px;
+height: 15px;
+margin: 0;
+font-size: 70%;
+background-color: #FFFFFF;
+}
+
+#calendrier .navcal:hover {
+background-color: #EEFFEE;
+}

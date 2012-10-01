@@ -1,0 +1,139 @@
+/*
+ -Contour gris clair : #d0d5d9
+ -Background gris clair : #f0f1f4
+ -Background vert : #eef6dc
+ -Background bleu : #dceffd
+ -Color "titre" : #3f5469
+*/
+
+.album td
+{
+    width:400px;
+    border:1px solid #ffffff;
+    height:200px;
+    background-color:#4a4a4a;
+    box-shadow:0px 0px 3px #3f5469;
+}
+
+.album
+{
+    clear:both;
+}
+
+
+.album h4
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    height:28px;
+    color:#ffffff;
+    font-size:14px;
+    padding:15px 5px 0px 5px;
+    font-weight:bold;
+    margin:0px;
+    display:inline-block;
+    position:relative;
+    top:160px;
+    width:387px;
+    text-transform: uppercase;
+}
+
+
+.album td:hover
+{
+    box-shadow:0px 0px 5px #000000;
+}
+
+.album td:hover h4
+{
+    top:114px;
+    height:50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color:#dceffd;
+}
+
+.optionsAlbum
+{
+    display:none;
+}
+
+.optionsAlbum img:hover
+{
+    cursor:pointer;
+}
+
+.album td:hover .optionsAlbum
+{
+    display:inline;
+    float:right;
+}
+
+.option_supprimer
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin:auto;
+}
+
+#tabListePhoto
+{
+    margin:auto;
+}
+
+
+.note_photo
+{
+    float:right;
+    width:200px;
+}
+
+.note_photo p
+{
+    padding:5px;
+}
+
+.affichage_photo
+{
+    border:1px solid #d0d5d9;
+}
+
+.description_photo
+{
+    width:600px;
+}
+
+#contenuDescriptionPhoto
+{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.infosDateAuteur
+{
+    float:right;
+    font-size:10px;
+}
+
+/*Les commentaires*/
+.commentaire /* LE commentaire */
+{
+	background-color:#dceffd;
+	padding:5px;
+	margin-top:30px;
+	border-left: 2px solid #aaa9a9;
+}
+
+.infos_commentaire /* les infos sur le commentaire */
+{
+	font-size:10px;
+	text-align:right;
+	background-color:#ffffff;
+	margin:0px;
+}
+
+.commentairesEvent
+{
+    width:600px;
+    padding-top:20px;
+}
+
+
+
