@@ -7,7 +7,7 @@ class MGCommentaire
 	private $id;
 	private $auteur;
 	private $date;
-	private $id_photo;
+	private $id_photo; //id photo
 	private $lien; //pour la liste des derniers commentaires
 	
 	
